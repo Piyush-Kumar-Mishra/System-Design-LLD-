@@ -24,8 +24,9 @@ public:
     void addProduct(Product* p) { 
         products.push_back(p);
     }
-
-    const vector<Product*>& getProducts() { 
+    // Ther is no use of this getter
+    const vector<Product*>& getProducts() {  //Applies to the return value, not the function.This means the returned reference is a 
+                                             //reference to a const vector (the caller cannot modify the vector elements or the vector itself).
         return products;
     } 
 
