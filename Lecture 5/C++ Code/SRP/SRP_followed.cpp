@@ -25,7 +25,8 @@ public:
         products.push_back(p);
     }
 
-    const vector<Product*>& getProducts() { 
+    const vector<Product*>& getProducts() {  //Applies to the return value, not the function.This means the returned reference is a 
+                                             //reference to a const vector (the caller cannot modify the vector elements or the vector itself).
         return products;
     } 
 
